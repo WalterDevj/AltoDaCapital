@@ -31,7 +31,7 @@
 
       .hero-banner {
         height: 40vh;
-        background-image: url("/bootstrap-5.3.5-dist/images/Jorge&Matheus.jpg");
+        background-image: url("bootstrap-5.3.5-dist/images/Jorge&Matheus.jpg");
         background-size: cover;
         background-position: center;
         color: var(--cor-texto-claro);
@@ -45,6 +45,9 @@
       .hero-banner h1 {
         font-size: 2.5rem;
         font-weight: bold;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px 20px;
+        border-radius: 8px;
       }
 
       .content-section {
@@ -96,10 +99,15 @@
     </style>
   </head>
   <body>
-    <!-- Navbar -->
+    <!-- Cabeçalho e Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Alto da Capital</a>
+        <a
+          class="navbar-brand"
+          href="AltoDaCapital/bootstrap-5.3.5-dist/index.html"
+        >
+          Alto da Capital
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -111,12 +119,27 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="/bootstrap-5.3.5-dist/index.html"
+              <a
+                class="nav-link"
+                href="AltoDaCapital/bootstrap-5.3.5-dist/index.html"
                 >Início</a
               >
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Notícias</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="bootstrap-5.3.5-dist/pages/noticia_politica.html"
+                >Política</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Entretenimento</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Esportes</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Saúde</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tecnologia</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -124,7 +147,11 @@
 
     <!-- Banner -->
     <div class="hero-banner">
-      <h1>Jorge & Mateus show em Brasília</h1>
+      <img
+        src="bootstrap-5.3.5-dist/images/Jorge&Matheus.jpg
+      "
+        alt=""
+      />
     </div>
 
     <!-- Conteúdo principal -->
