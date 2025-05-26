@@ -16,6 +16,47 @@ body {
   --cor-texto-claro: #ffffff; /* Texto claro para contraste */
 }
 
+/* Cards */
+
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-title {
+  color: #1a4b6f;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.btn-primary {
+  background-color: #1a4b6f;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #163a55;
+}
+
 /* Navbar */
 
 .navbar {
@@ -276,4 +317,45 @@ section.sobre-nos {
 
 .sobre-nos .perfil a:hover {
   color: #0d2f48;
+}
+
+/* Estilo específico para cards da seção Últimas Notícias */
+.ultimas-noticias .card {
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.ultimas-noticias .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.ultimas-noticias .card-img-top {
+  height: 220px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.ultimas-noticias .card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ultimas-noticias .card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.ultimas-noticias .btn {
+  margin-top: auto;
 }
